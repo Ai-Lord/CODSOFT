@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(./depositphotos_78918506-stock-illustration-abstract-tech-background-futuristic-technology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calculator {
+    background: #ffffff38;
+    border-radius: 10px;
+    box-shadow: 5px 10px 25px rgb(0, 0, 0);
+    width: 320px;
+    padding: 20px;
+}
+
+.display {
+    background: #333;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background: #252525;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.red{
+    background-color: rgb(220, 100, 14);
+}
+.orange{
+    background-color: rgb(4, 95, 205);
+}
+.btn:hover {
+    background: #d0d0d0;
+}
+
+.zero {
+    grid-column: span 2;
+}
+.equal {
+    grid-row: span 2;
+}
+
+.btn:active {
+    background: #c0c0c0;
+}
